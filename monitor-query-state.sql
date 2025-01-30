@@ -1,0 +1,1 @@
+select application_name,state,query from pg_stat_activity where usename='username';

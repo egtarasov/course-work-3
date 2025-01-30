@@ -11,7 +11,7 @@ def fibonachi(n):
 
 
 def task() -> int:
-    return fibonachi(45)
+    return fibonachi(40)
 
 
 def the_end() -> str:

@@ -9,7 +9,6 @@ yc managed-airflow cluster create \
    --subnet-ids $subnets \
    --webserver count=1,resource-preset-id=c1-m2 \
    --scheduler count=1,resource-preset-id=c1-m2 \
-   --worker count=1,resource-preset-id=c1-m2 \
+   --worker min-count=0,max-count=2,resource-preset-id=c1-m2 \
    --triggerer count=1,resource-preset-id=c1-m2 \
    --dags-bucket course-work-bucket
-
